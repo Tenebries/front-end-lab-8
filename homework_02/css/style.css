@@ -151,35 +151,35 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
     input[type=text], [type=submit] {
         color: red;
     }
+}
 
-    /* Thirteenth task, */
-    @media screen and (max-width: 1140px), screen and (max-height: 835px) {
-        .tm-sidebar {
-            overflow: hidden;
-            position: sticky;
-            top: 0;
-            left: 0;
-            width: 100%;
-            margin-bottom: 300px;
-            z-index: 999999;
-            margin-left: 30px;
-            max-width: 1080px;
-        }
+/* Thirteenth task, */
+@media screen and (max-width: 1140px), screen and (max-height: 835px) {
+    .tm-sidebar {
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-bottom: 300px;
+        z-index: 999999;
+        margin-left: 30px;
+        max-width: 1080px;
+    }
 
-        .tm-main-nav ul li {
-            display: inline;
-            text-align: center;
-            font-size: 16px;
-            border: none;
-        }
+    .tm-main-nav ul li {
+        display: inline;
+        text-align: center;
+        font-size: 16px;
+        border: none;
+    }
 
-        .tm-main-nav ul li a {
-            display: inline;
-            width: 50px;
-        }
+    .tm-main-nav ul li a {
+        display: inline;
+        width: 50px;
+    }
 
-        .tm-main-content {
-            margin-left: 0;
-        }
+    .tm-main-content {
+        margin-left: 0;
     }
 }
