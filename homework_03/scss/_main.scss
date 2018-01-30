@@ -1,0 +1,144 @@
+// Variables
+$tableTdBackgroundColor: null !default;
+$headerTransform: null !default;
+$briefFloat: null !default;
+
+// Mixins
+@mixin briefStyle($width, $float) {
+  width: $width;
+  float: $float;
+  background-color: $briefBackgroundColor;
+  color: #000;
+  padding: 20px;
+  margin: $briefMargin;
+}
+
+@mixin buttonStyle() {
+  border: 1px solid $linkColor;
+  background-color: $contentBackgroundColor;
+  color: $linkColor;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bodyBackgroundColor;
+  color: $textColor;
+}
+
+#content {
+  padding: 20px;
+  width: 960px;
+  margin: 0 auto;
+  background-color: $contentBackgroundColor;
+
+  h1 {
+    color: $headingColor;
+    text-align: center;
+    text-transform: $headerTransform;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $headingColor;
+    margin: 20px 0;
+
+    &:nth-child(20) {
+      margin-top: 60px;
+    }
+  }
+
+  img {
+    border: 2px solid $headingColor;
+    padding: 2px;
+
+    &.img-left {
+      float: left;
+      margin-right: 20px;
+    }
+
+    &.img-right {
+      float: right;
+      margin-left: 15px;
+    }
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  .brief {
+    @include briefStyle($widthBrief, $briefFloat);
+  }
+
+  a {
+    color: $linkColor;
+  }
+
+  caption {
+    text-align: right;
+    color: black;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    th {
+      color: black;
+      background-color: $tableColor;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: left;
+      padding: 10px 10px 10px 20px;
+      border-right: 1px solid $tableThBorderColor;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    td {
+      border-bottom: 1px solid $tableColor;
+      padding: 10px 10px 10px 20px;
+      background-color: $tableTdBackgroundColor;
+    }
+  }
+
+  form {
+    color: $formColor;
+
+    #name {
+      display: flex;
+      div {
+        width: 100%;
+
+        &:last-child {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .form-field {
+    border: 1px solid $tableColor;
+    width: 100%;
+    padding: 5px;
+  }
+
+  input[type="submit"] {
+    @include buttonStyle;
+    padding: 10px;
+    width: 240px;
+    margin-top: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+}
