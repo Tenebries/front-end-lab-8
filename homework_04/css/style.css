@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw;
+}
+
+#container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#container header {
+    background: fixed url("../img/apples.jpg") top center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+#container header .nav_bar {
+    display: flex;
+    padding: 35px 175px;
+    justify-content: space-between;
+}
+
+#container header .nav_bar .nav_brand {
+    display: inline-block;
+}
+
+#container header .nav_bar .nav_brand a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+#container header .nav_bar nav {
+    display: inline-block;
+}
+
+#container header .nav_bar nav li {
+    display: inline;
+}
+
+#container header .nav_bar nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0 5px 10px 5px;
+    margin-right: 25px;
+}
+
+#container header .nav_bar nav li a:hover {
+    border-bottom: 2px solid;
+    border-color: #a7b4c1;
+}
+
+#container header .logo {
+    text-align: center;
+    margin-top: 100px;
+    color: #fff;
+}
+
+#container header .logo h1 {
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+#container header .logo h1 h1:after {
+    content: "TM";
+}
+
+#container header .logo h1 span:first-child {
+    font-size: 65px;
+    font-family: serif;
+}
+
+#container header .logo h1 span:last-child {
+    font-size: 18px;
+    vertical-align: super;
+    letter-spacing: 1px;
+}
+
+#container header .logo p {
+    font-size: 14px;
+}
+
+#container header .button {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#container header .button .read_more {
+    background-color: rgba(2, 2, 2, 0.55);
+    display: inline-block;
+    color: #fff;
+    padding: 15px 65px;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+}
+
+#container #main {
+    margin: auto;
+}
+
+#container #main #top {
+    padding: 8% 10%;
+}
+
+#container #main #top .articles {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+#container #main #top .articles p:first-child {
+    display: block;
+    float: left;
+    width: 45%;
+    margin-right: 3%;
+    font-size: 22px;
+}
+
+#container #main #top .articles p:last-child {
+    display: block;
+    float: left;
+    width: 45%;
+    margin-left: 3%;
+    font-size: 14px;
+}
+
+#container #main #middle {
+    background: #F3F3F3;
+    padding: 10% 10%;
+}
+
+#container #main #middle .articles_featured_title {
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#container #main #middle .grid_top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 30px;
+    padding-bottom: 30px;
+}
+
+#container #main #middle .grid_top .frame {
+    position: relative;
+    height: 20vw;
+    background-size: cover !important;
+    border: 1px solid #fff;
+}
+
+#container #main #middle .grid_top .frame:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 60%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+#container #main #middle .grid_top .frame .likes {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 6px 7px;
+    background: rgba(2, 2, 2, 0.55);
+    border: 2px solid #fff;
+    z-index: 1;
+}
+
+#container #main #middle .grid_top .frame .likes:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#container #main #middle .grid_top .frame .likes a {
+    text-decoration: none;
+}
+
+#container #main #middle .grid_top .frame .likes span {
+    color: #fff;
+    font-size: 15px;
+}
+
+#container #main #middle .grid_top .frame a {
+    text-decoration: none;
+}
+
+#container #main #middle .grid_top .frame a:hover {
+    text-shadow: 2px 2px 1px black;
+}
+
+#container #main #middle .grid_top .frame p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 1;
+}
+
+#container #main #middle .grid_top .img_1 {
+    background: url(../img/sample.jpg) no-repeat center;
+}
+
+#container #main #middle .grid_top .img_2 {
+    background: url(../img/sample2.jpg) no-repeat center;
+}
+
+#container #main #middle .grid_bottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+}
+
+#container #main #middle .grid_bottom .frame {
+    position: relative;
+    height: 20vw;
+    background-size: cover !important;
+    border: 1px solid #fff;
+}
+
+#container #main #middle .grid_bottom .frame:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 60%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+#container #main #middle .grid_bottom .frame .likes {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 6px 7px;
+    background: rgba(2, 2, 2, 0.55);
+    border: 2px solid #fff;
+    z-index: 1;
+}
+
+#container #main #middle .grid_bottom .frame .likes:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#container #main #middle .grid_bottom .frame .likes a {
+    text-decoration: none;
+}
+
+#container #main #middle .grid_bottom .frame .likes span {
+    color: #fff;
+    font-size: 15px;
+}
+
+#container #main #middle .grid_bottom .frame a {
+    text-decoration: none;
+}
+
+#container #main #middle .grid_bottom .frame a:hover {
+    text-shadow: 2px 2px 1px black;
+}
+
+#container #main #middle .grid_bottom .frame p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 1;
+}
+
+#container #main #middle .grid_bottom .img_3 {
+    background: url(../img/sample2.jpg) no-repeat center;
+}
+
+#container #main #middle .grid_bottom .img_4 {
+    background: url(../img/sample3.jpg) no-repeat center;
+}
+
+#container #main #middle .subscribe {
+    padding: 5% 6%;
+    margin-top: 5%;
+    background: #fff;
+}
+
+#container #main #middle .subscribe p {
+    font-size: 20px;
+}
+
+#container #main #middle .subscribe .subscribe_box {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 0 5%;
+}
+
+#container #main #middle .subscribe .subscribe_box p {
+    padding-top: 15px;
+}
+
+#container #main #middle .subscribe .subscribe_box .forms {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#container #main #middle .subscribe .subscribe_box input {
+    padding: 5% 10%;
+    margin-left: 5px;
+    background: #f3f3f3;
+    color: #000;
+    font-size: 1em;
+    border: 1px solid #4E5051;
+}
+
+#container #main #middle .subscribe .subscribe_box input::placeholder {
+    color: #000;
+}
+
+#container #main #middle .subscribe .subscribe_box button {
+    font-size: 1em;
+    position: relative;
+    color: #fff;
+    background-color: #343638;
+    left: -2px;
+    border: none;
+}
+
+#container #main #middle .subscribe .subscribe_box button:hover {
+    background: #525052;
+    cursor: pointer;
+}
+
+#container #main #bottom {
+    padding: 10% 10%;
+    background: #ffffff;
+}
+
+#container #main #bottom .wrapper {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#container #main #bottom .wrapper h1 {
+    margin-bottom: 8%;
+    font-size: 16px;
+}
+
+#container #main #bottom .wrapper p {
+    margin-bottom: 5%;
+    color: #a3a3a3;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#container #main #bottom .wrapper .black_white {
+    display: grid;
+    margin-right: 100px;
+}
+
+#container #main #bottom .wrapper .contact {
+    display: grid;
+    margin-right: 10%;
+}
+
+#container #main #bottom .wrapper .tweet {
+    display: grid;
+    margin-right: 100px;
+}
+
+#container #main #bottom .wrapper .tweet .time {
+    color: #a3a3a3;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+#container #main #bottom .wrapper .newsletter {
+    display: grid;
+}
+
+#container #main #bottom .wrapper .newsletter .forms_2 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding-top: 2%;
+}
+
+#container #main #bottom .wrapper .newsletter input {
+    padding: 7% 3%;
+    background: #f3f3f3;
+    font-size: 1em;
+    border: 1px solid #4E5051;
+    color: #000;
+}
+
+#container #main #bottom .wrapper .newsletter input::placeholder {
+    padding-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#container #main #bottom .wrapper .newsletter button {
+    position: relative;
+    left: -2px;
+    color: #fff;
+    background: #343638;
+    font-size: 1em;
+    border: none;
+}
+
+#container #main #bottom .wrapper .newsletter button:hover {
+    background: #525052;
+    cursor: pointer;
+}
+
+#container footer {
+    padding: 0 10%;
+    background-color: #fff;
+}
+
+#container footer .footer_content {
+    padding: 2% 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#container footer p {
+    display: inline-block;
+    float: left;
+    color: #afafaf;
+    font-size: 14px;
+}
+
+#container footer .footer_links {
+    display: flex;
+    padding-left: 58%;
+}
+
+#container footer .footer_links li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#container footer .footer_links li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
