@@ -41,7 +41,7 @@ body {
 }
 
 #container #banner .bg_banner p {
-    width: 27%;
+    width: 300px;
     padding: 50px 13%;
     color: #fff;
     font-size: 36px;
@@ -70,6 +70,7 @@ body {
 }
 
 #container #content .news a img {
+    width: 100%;
     padding-bottom: 5px;
 }
 
@@ -87,7 +88,6 @@ body {
     display: flex;
     padding: 20px 13%;
     background: #39c2d7;
-    max-width: 100%;
 }
 
 #container footer li {
@@ -142,7 +142,7 @@ body {
 
     #container #banner .bg_banner {
         position: relative;
-        height: 220px;
+        height: 45vw;
     }
 
     #container #banner .bg_banner p {
@@ -224,7 +224,7 @@ body {
     }
 
     #container #banner .bg_banner {
-        height: 500px;
+        height: 40vw;
     }
 
     #container #banner .bg_banner p {
