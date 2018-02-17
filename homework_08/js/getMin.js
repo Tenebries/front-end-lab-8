@@ -1,0 +1,1 @@
+getMin = (...arguments) => Math.min(...arguments);
