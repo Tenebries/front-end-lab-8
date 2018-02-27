@@ -1,0 +1,25 @@
+li ul {
+    display: none; }
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    cursor: pointer; }
+ul div {
+    margin-bottom: 3px;
+    display: flex;
+    align-items: flex-end; }
+ul div:hover {
+    background-color: #f2f2f2; }
+
+.material-icons {
+    color: #cccccc; }
+
+.open {
+    display: block; }
+
+.folder {
+    color: #f5cd3d; }
+
+.empty {
+    font-style: italic; }
