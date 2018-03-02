@@ -1,0 +1,71 @@
+body {
+  background-color: #1C1C1E;
+  font-family: serif; }
+
+h1 {
+  color: #A19E89;
+  font-size: 36px; }
+
+.tanksContainer {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  grid-gap: 10px; }
+  .tanksContainer a {
+    color: #D7D2B7;
+    text-decoration: none; }
+    .tanksContainer a .boardTanks:hover {
+      background-color: #2C2C2C;
+      transition: 0.3s; }
+    .tanksContainer a .boardImg {
+      width: 100%; }
+    .tanksContainer a .boardDiv {
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .tanksContainer a .boardDiv .boardElement {
+        display: inline; }
+      .tanksContainer a .boardDiv .boardElement:nth-child(1) {
+        width: 10%; }
+      .tanksContainer a .boardDiv .boardElement:nth-child(2) {
+        color: #A19E7E;
+        font-weight: bold;
+        margin: 0 5px; }
+      .tanksContainer a .boardDiv .boardElement:nth-child(3) {
+        font-weight: bold; }
+
+.tankContainer {
+  padding: 10px; }
+
+.description {
+  padding-left: 10px; }
+  .description h1 {
+    display: inline-block;
+    padding-left: 10px; }
+
+.container-grid {
+  color: #A19E7E;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  padding: 0 7px; }
+  .container-grid .backToList {
+    display: block;
+    color: #A19E7E;
+    text-decoration: none; }
+  .container-grid img {
+    display: block; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+
+table caption {
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+table td {
+  border: 1px solid #A19E86;
+  padding: 10px;
+  color: #D7D2B7; }
